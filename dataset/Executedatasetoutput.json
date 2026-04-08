@@ -1,0 +1,28 @@
+{
+	"name": "Executedatasetoutput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_cloud_knowledge",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"folderoutputfile": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "copyinputfile"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

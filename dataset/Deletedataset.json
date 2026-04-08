@@ -1,0 +1,19 @@
+{
+	"name": "Deletedataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_cloud_knowledge",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "customers_csv.csv",
+				"fileSystem": "copyinputfile"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

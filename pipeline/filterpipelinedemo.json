@@ -1,0 +1,63 @@
+{
+	"name": "filterpipelinedemo",
+	"properties": {
+		"activities": [
+			{
+				"name": "Filter_demo_variable",
+				"type": "Filter",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@variables('Departments')",
+						"type": "Expression"
+					},
+					"condition": {
+						"value": "@equals(item(),'Sales')",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Filter_demo_parameter",
+				"type": "Filter",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.Number",
+						"type": "Expression"
+					},
+					"condition": {
+						"value": "@greater(item(),4)",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"Number": {
+				"type": "array",
+				"defaultValue": [
+					1,
+					2,
+					3,
+					4
+				]
+			}
+		},
+		"variables": {
+			"Departments": {
+				"type": "Array",
+				"defaultValue": [
+					"HR",
+					"Sales",
+					"Consulting"
+				]
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-03-22T15:27:39Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

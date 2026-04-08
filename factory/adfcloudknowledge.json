@@ -1,0 +1,9 @@
+{
+	"name": "adfcloudknowledge",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d761673b-ca27-4fa1-a0d7-329dd904de12",
+		"tenantId": "f157861a-7d71-4d18-9680-3df8780ac314"
+	}
+}
