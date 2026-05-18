@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "akashhealthcareprojectdataengineeringdev"
+		},
+		"AzureDatabricks2_accessToken": {
+			"value": ""
+		},
+		"ls_adls_to_adls_ak_dev_accountKey": {
+			"value": ""
+		},
+		"ls_srcsqldb_adls_password": {
+			"value": ""
+		},
+		"ls_adls_to_adls_ak_dev_properties_typeProperties_url": {
+			"value": "https://adlahealthcareproject.dfs.core.windows.net/"
+		},
+		"ls_srcsqldb_adls_properties_typeProperties_server": {
+			"value": "mssqlhealthcareakashdev.database.windows.net"
+		},
+		"ls_srcsqldb_adls_properties_typeProperties_database": {
+			"value": "ASQL_HealthCareProject_Akash_DEV"
+		},
+		"ls_srcsqldb_adls_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		}
+	}
+}
