@@ -1,0 +1,15 @@
+{
+	"name": "akashhealthcareprojectdataengineeringdev",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2c3125d0-cc5c-49d0-bca5-d15177a72219",
+		"tenantId": "45ce7349-c0ea-4600-9cfa-80546a4ed3c1"
+	}
+}

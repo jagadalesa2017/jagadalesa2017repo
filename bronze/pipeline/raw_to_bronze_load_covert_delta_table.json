@@ -1,0 +1,35 @@
+{
+	"name": "raw_to_bronze_load_covert_delta_table",
+	"properties": {
+		"activities": [
+			{
+				"name": "Azuredatabricksnotebookcall",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "notebookpath",
+						"value": "/Workspace/Users/priyaintellibipractice@gmail.com/Raw_to_bronze_copydata"
+					}
+				],
+				"typeProperties": {
+					"notebookPath": "/Users/priyaintellibipractice@gmail.com/Raw_to_bronze_copydata"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks2",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-05-15T18:12:28Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
